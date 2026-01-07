@@ -65,8 +65,8 @@ expo build:android
 
 npm install -g eas-cli
 eas build:configure
-eas build -p android 
-eas build -p ios
+eas build -p android --profile preview
+eas build -p ios --profile preview
 ```
 
 ### iOS IPA
