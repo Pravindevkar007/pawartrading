@@ -3,12 +3,21 @@
     "name": "Pawar Traders",
     "slug": "pawar-traders",
     "version": "1.0.0",
+    "sdkVersion": "54.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "newArchEnabled": false,
-    "platforms": ["ios", "android"],
+    "newArchEnabled": true,
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "android": {
       "package": "com.pawartraders.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "218c3a0b-0ef9-4b55-bb15-60a2495cbf3b"
+      }
     }
   }
 }
