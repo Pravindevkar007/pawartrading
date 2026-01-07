@@ -61,6 +61,12 @@ npm run ios
 ### Android APK
 ```bash
 expo build:android
+
+
+npm install -g eas-cli
+eas build:configure
+eas build -p android 
+eas build -p ios
 ```
 
 ### iOS IPA
