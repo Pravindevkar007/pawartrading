@@ -5,6 +5,7 @@ A React Native mobile application for grocery shopping with cart functionality a
 ## Features
 
 - 📱 Cross-platform (Android & iOS)
+- 🌐 Multilingual support (English, Hindi, Marathi)
 - 🛒 Product catalog with images
 - ➕ Quantity selection
 - 🛍️ Shopping cart management
@@ -71,24 +72,29 @@ PawarTraders/
 ├── components/
 │   ├── ProductCard.js     # Product display component
 │   ├── Cart.js           # Cart management component
-│   └── Receipt.js        # Receipt generation component
+│   ├── Receipt.js        # Receipt generation component
+│   └── LanguageSelector.js # Language selection component
 ├── screens/
 │   ├── HomeScreen.js     # Product listing screen
 │   ├── CartScreen.js     # Shopping cart screen
 │   └── ReceiptScreen.js  # Receipt display screen
+├── context/
+│   └── LanguageContext.js # Language context provider
 ├── data/
-│   └── products.js       # Product data
+│   ├── products.js       # Product data
+│   └── translations.js   # Translation data
 └── package.json          # Dependencies
 
 ```
 
 ## Usage
 
-1. **Browse Products**: View all grocery items on home screen
-2. **Add to Cart**: Select quantity and add items to cart
-3. **Manage Cart**: View, modify, or remove items from cart
-4. **Checkout**: Generate receipt with total amount and tax
-5. **New Order**: Start fresh order after completing purchase
+1. **Select Language**: Choose from English, Hindi, or Marathi using the language selector
+2. **Browse Products**: View all grocery items on home screen
+3. **Add to Cart**: Select quantity and add items to cart
+4. **Manage Cart**: View, modify, or remove items from cart
+5. **Checkout**: Generate receipt with total amount and tax
+6. **New Order**: Start fresh order after completing purchase
 
 ## Customization
 
@@ -109,6 +115,31 @@ Edit `data/products.js` to add more grocery items:
 In `components/Receipt.js`, change tax calculation:
 ```javascript
 const tax = Math.round(subtotal * 0.05); // Change 0.05 to desired rate
+```
+
+### Adding New Languages
+To add support for additional languages:
+
+1. Edit `data/translations.js` to add new language translations:
+```javascript
+export const translations = {
+  en: { /* English translations */ },
+  hi: { /* Hindi translations */ },
+  mr: { /* Marathi translations */ },
+  // Add new language here
+  es: { /* Spanish translations */ }
+};
+```
+
+2. Update the language options in `components/LanguageSelector.js`:
+```javascript
+const languages = [
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'hi', name: 'हिंदी', flag: '🇮🇳' },
+  { code: 'mr', name: 'मराठी', flag: '🇮🇳' },
+  // Add new language option
+  { code: 'es', name: 'Español', flag: '🇪🇸' }
+];
 ```
 
 ## Support
