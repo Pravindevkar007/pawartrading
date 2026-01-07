@@ -90,10 +90,10 @@ const CartScreen = ({ navigation, cartItems, setCartItems }) => {
 
     Alert.alert(t("chooseNumber"), t("selectWhatsAppNumber"), [
       { text: t("cancel"), style: "cancel" },
-      {
-        text: `${t('Pravin Devkar')} : +91 8806061531`,
-        onPress: () => sendWhatsAppReceipt("918806061531"),
-      },
+      // {
+      //   text: `${t('Pravin Devkar')} : +91 8806061531`,
+      //   onPress: () => sendWhatsAppReceipt("918806061531"),
+      // },
       {
         text: `${t('Suraj Pawar')} : +91 9307039174`,
         onPress: () => sendWhatsAppReceipt("919307039174"),
