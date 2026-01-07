@@ -33,6 +33,10 @@ npm install
 ### Step 3: Start Development Server
 ```bash
 npm start
+
+or
+
+npx expo start --tunnel
 ```
 
 ### Step 4: Run on Device
