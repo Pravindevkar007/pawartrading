@@ -62,7 +62,7 @@ export const translations = {
     visitAgain: "Visit again soon!",
     
     // Store Info
-    storeName: "PAWAR TRADERS",
+    storeName: "PAWAR TRADING",
     storeSubtitle: "Grocery Store",
     tagline: "Fresh Groceries at Best Prices",
     
@@ -159,7 +159,7 @@ export const translations = {
     visitAgain: "पुन्हा भेट द्या!",
     
     // Store Info
-    storeName: "पवार ट्रेडर्स",
+    storeName: "पवार ट्रेडिंग",
     storeSubtitle: "किराणा दुकान",
     tagline: "सर्वोत्तम किमतीत ताजे किराणा माल",
     
