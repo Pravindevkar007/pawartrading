@@ -43,7 +43,7 @@ const AppContent = () => {
         initialRouteName="Home"
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#4caf50',
+            backgroundColor: '#97292c',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
@@ -116,11 +116,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   languageButton: {
-    backgroundColor: '#1976d2',
+    backgroundColor: '#97292c',
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 15,
     marginRight: 10,
+    borderWidth: 2,
+    borderColor: '#fff',
   },
   languageButtonText: {
     color: '#fff',
@@ -128,11 +130,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   cartButton: {
-    backgroundColor: '#2e7d32',
+    backgroundColor: '#97292c',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 20,
     marginRight: 15,
+    borderWidth: 2,
+    borderColor: '#fff',
   },
   cartButtonText: {
     color: '#fff',

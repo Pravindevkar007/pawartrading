@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   Alert,
   Linking,
+  Share,
 } from "react-native";
 import Cart from "../components/Cart";
 import { useLanguage } from "../context/LanguageContext";
@@ -54,21 +55,24 @@ const CartScreen = ({ navigation, cartItems, setCartItems }) => {
     receiptText += `*${t("total")}: ₹${total}*\n\n`;
     receiptText += `${t("thankYou")} 🙏`;
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    const appUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
+      receiptText
+    )}`;
+    const webUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       receiptText
     )}`;
 
     try {
-      const supported = await Linking.canOpenURL(whatsappUrl);
-      if (supported) {
-        await Linking.openURL(whatsappUrl);
-        setCartItems([]);
-        Alert.alert(t("success"), t("receiptSent"), [
-          { text: t("ok"), onPress: () => navigation.navigate("Home") },
-        ]);
+      const appSupported = await Linking.canOpenURL(appUrl);
+      if (appSupported) {
+        await Linking.openURL(appUrl);
       } else {
-        Alert.alert(t("error"), t("unableToOpenWhatsApp"));
+        await Linking.openURL(webUrl);
       }
+      setCartItems([]);
+      Alert.alert(t("success"), t("receiptSent"), [
+        { text: t("ok"), onPress: () => navigation.navigate("Home") },
+      ]);
     } catch (error) {
       Alert.alert(t("error"), t("failedToSendReceipt"));
     }
@@ -95,11 +99,11 @@ const CartScreen = ({ navigation, cartItems, setCartItems }) => {
       //   onPress: () => sendWhatsAppReceipt("918806061531"),
       // },
       {
-        text: `${t('Suraj Pawar')} : +91 9307039174`,
+        text: `${t("Suraj Pawar")} : +91 9307039174`,
         onPress: () => sendWhatsAppReceipt("919307039174"),
       },
       {
-        text: `${t('Sunny Pawar')} : +91 8412863274`,
+        text: `${t("Sunny Pawar")} : +91 8412863274`,
         onPress: () => sendWhatsAppReceipt("918412863274"),
       },
     ]);
@@ -162,7 +166,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#2e7d32",
+    color: "#97292c",
     marginVertical: 15,
   },
   emptyCart: {
@@ -176,7 +180,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   shopButton: {
-    backgroundColor: "#4caf50",
+    backgroundColor: "#97292c",
     paddingHorizontal: 30,
     paddingVertical: 15,
     borderRadius: 8,
@@ -187,7 +191,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   checkoutButton: {
-    backgroundColor: "#2e7d32",
+    backgroundColor: "#97292c",
     padding: 20,
     alignItems: "center",
     margin: 10,
