@@ -4,9 +4,16 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 
 import HomeScreen from './screens/HomeScreen';
+import CategoryScreen from './screens/CategoryScreen';
+import TodaysOffersScreen from './screens/TodaysOffersScreen';
+import SearchScreen from './screens/SearchScreen';
+import FavoritesScreen from './screens/FavoritesScreen';
+import ContactScreen from './screens/ContactScreen';
 import CartScreen from './screens/CartScreen';
 import ReceiptScreen from './screens/ReceiptScreen';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { FavoritesProvider } from './context/FavoritesContext';
+import { OrderHistoryProvider } from './context/OrderHistoryContext';
 
 const Stack = createStackNavigator();
 
@@ -43,11 +50,26 @@ const AppContent = () => {
         initialRouteName="Home"
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#97292c',
+            backgroundColor: 'linear-gradient(135deg, #FF6B35 0%, #F7931E 100%)',
+            elevation: 8,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 4 },
+            shadowOpacity: 0.3,
+            shadowRadius: 8,
+            borderBottomWidth: 0,
           },
-          headerTintColor: '#fff',
+          headerBackground: () => (
+            <View style={{
+              flex: 1,
+              backgroundColor: '#FF6B35',
+              background: 'linear-gradient(135deg, #FF6B35 0%, #F7931E 100%)'
+            }} />
+          ),
+          headerTintColor: '#FFFFFF',
           headerTitleStyle: {
             fontWeight: 'bold',
+            fontSize: 18,
+            color: '#FFFFFF',
           },
         }}
       >
@@ -68,10 +90,85 @@ const AppContent = () => {
         </Stack.Screen>
         
         <Stack.Screen 
+          name="Category" 
+          options={({ navigation }) => ({
+            title: '',
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
+        >
+          {(props) => (
+            <CategoryScreen 
+              {...props} 
+              cartItems={cartItems} 
+              setCartItems={setCartItems} 
+            />
+          )}
+        </Stack.Screen>
+        
+        <Stack.Screen 
+          name="TodaysOffers" 
+          options={({ navigation }) => ({
+            title: '',
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
+        >
+          {(props) => (
+            <TodaysOffersScreen 
+              {...props} 
+              cartItems={cartItems} 
+              setCartItems={setCartItems} 
+            />
+          )}
+        </Stack.Screen>
+        
+        <Stack.Screen 
+          name="Search" 
+          options={({ navigation }) => ({
+            title: '',
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
+        >
+          {(props) => (
+            <SearchScreen 
+              {...props} 
+              cartItems={cartItems} 
+              setCartItems={setCartItems} 
+            />
+          )}
+        </Stack.Screen>
+        
+        <Stack.Screen 
+          name="Favorites" 
+          options={({ navigation }) => ({
+            title: '',
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
+        >
+          {(props) => (
+            <FavoritesScreen 
+              {...props} 
+              cartItems={cartItems} 
+              setCartItems={setCartItems} 
+            />
+          )}
+        </Stack.Screen>
+        
+        <Stack.Screen 
+          name="Contact" 
+          options={({ navigation }) => ({
+            title: '',
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
+        >
+          {(props) => <ContactScreen {...props} />}
+        </Stack.Screen>
+        
+        <Stack.Screen 
           name="Cart" 
-          options={{
-            title: t('cart'),
-          }}
+          options={({ navigation }) => ({
+            title: '',
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
         >
           {(props) => (
             <CartScreen 
@@ -84,10 +181,11 @@ const AppContent = () => {
         
         <Stack.Screen 
           name="Receipt" 
-          options={{
-            title: t('receipt'),
+          options={({ navigation }) => ({
+            title: '',
             headerLeft: null,
-          }}
+            headerRight: () => <CartButton navigation={navigation} />,
+          })}
         >
           {(props) => (
             <ReceiptScreen 
@@ -105,7 +203,11 @@ const AppContent = () => {
 export default function App() {
   return (
     <LanguageProvider>
-      <AppContent />
+      <FavoritesProvider>
+        <OrderHistoryProvider>
+          <AppContent />
+        </OrderHistoryProvider>
+      </FavoritesProvider>
     </LanguageProvider>
   );
 }
@@ -114,32 +216,42 @@ const styles = StyleSheet.create({
   headerButtons: {
     flexDirection: 'row',
     alignItems: 'center',
+    paddingRight: 5,
   },
   languageButton: {
-    backgroundColor: '#97292c',
+    backgroundColor: 'rgba(255,255,255,0.2)',
     paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 15,
-    marginRight: 10,
-    borderWidth: 2,
-    borderColor: '#fff',
+    paddingVertical: 8,
+    borderRadius: 20,
+    marginRight: 8,
+    borderWidth: 1.5,
+    borderColor: 'rgba(255,255,255,0.8)',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
   },
   languageButtonText: {
-    color: '#fff',
-    fontSize: 10,
-    fontWeight: 'bold',
+    color: '#FFFFFF',
+    fontSize: 11,
+    fontWeight: '600',
   },
   cartButton: {
-    backgroundColor: '#97292c',
+    backgroundColor: 'rgba(255,255,255,0.15)',
     paddingHorizontal: 15,
     paddingVertical: 8,
     borderRadius: 20,
-    marginRight: 15,
-    borderWidth: 2,
-    borderColor: '#fff',
+    borderWidth: 1.5,
+    borderColor: 'rgba(255,255,255,0.8)',
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
   },
   cartButtonText: {
-    color: '#fff',
+    color: '#FFFFFF',
     fontSize: 16,
     fontWeight: 'bold',
   },

@@ -55,12 +55,8 @@ const CartScreen = ({ navigation, cartItems, setCartItems }) => {
     receiptText += `*${t("total")}: ₹${total}*\n\n`;
     receiptText += `${t("thankYou")} 🙏`;
 
-    const appUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
-      receiptText
-    )}`;
-    const webUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      receiptText
-    )}`;
+    const appUrl = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(receiptText)}`;
+    const webUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(receiptText)}`;
 
     try {
       const appSupported = await Linking.canOpenURL(appUrl);
@@ -99,11 +95,11 @@ const CartScreen = ({ navigation, cartItems, setCartItems }) => {
       //   onPress: () => sendWhatsAppReceipt("918806061531"),
       // },
       {
-        text: `${t("Suraj Pawar")} : +91 9307039174`,
+        text: `${t('Suraj Pawar')} : +91 9307039174`,
         onPress: () => sendWhatsAppReceipt("919307039174"),
       },
       {
-        text: `${t("Sunny Pawar")} : +91 8412863274`,
+        text: `${t('Sunny Pawar')} : +91 8412863274`,
         onPress: () => sendWhatsAppReceipt("918412863274"),
       },
     ]);
@@ -160,58 +156,75 @@ const CartScreen = ({ navigation, cartItems, setCartItems }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#F8F9FA",
   },
   header: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#97292c",
-    marginVertical: 15,
+    color: "#FF6B35",
+    marginVertical: 20,
   },
   emptyCart: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 40,
   },
   emptyText: {
     fontSize: 18,
     color: "#666",
-    marginBottom: 20,
+    marginBottom: 30,
+    textAlign: "center",
   },
   shopButton: {
-    backgroundColor: "#97292c",
-    paddingHorizontal: 30,
+    backgroundColor: "#4CAF50",
+    paddingHorizontal: 40,
     paddingVertical: 15,
-    borderRadius: 8,
+    borderRadius: 25,
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
   },
   shopButtonText: {
-    color: "#fff",
+    color: "#FFFFFF",
     fontSize: 16,
     fontWeight: "bold",
   },
   checkoutButton: {
-    backgroundColor: "#97292c",
-    padding: 20,
+    backgroundColor: "#FF6B35",
+    padding: 18,
     alignItems: "center",
-    margin: 10,
-    borderRadius: 8,
+    margin: 15,
+    borderRadius: 25,
+    elevation: 6,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
   },
   checkoutText: {
-    color: "#fff",
+    color: "#FFFFFF",
     fontSize: 18,
     fontWeight: "bold",
   },
   whatsappButton: {
-    backgroundColor: "#25d366",
-    padding: 20,
+    backgroundColor: "#25D366",
+    padding: 18,
     alignItems: "center",
-    marginHorizontal: 10,
-    marginBottom: 10,
-    borderRadius: 8,
+    marginHorizontal: 15,
+    marginBottom: 15,
+    borderRadius: 25,
+    elevation: 6,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
   },
   whatsappText: {
-    color: "#fff",
+    color: "#FFFFFF",
     fontSize: 18,
     fontWeight: "bold",
   },

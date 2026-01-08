@@ -7,12 +7,17 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "icon": "./photos/1705840-6397.jpg",
     "platforms": [
       "ios",
       "android"
     ],
     "android": {
-      "package": "com.pawartraders.app"
+      "package": "com.pawartraders.app",
+      "icon": "./photos/1705840-6397.jpg"
+    },
+    "ios": {
+      "icon": "./photos/1705840-6397.jpg"
     },
     "extra": {
       "eas": {

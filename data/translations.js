@@ -5,7 +5,112 @@ export const translations = {
     cart: "Cart",
     receipt: "Receipt",
     back: "← Back",
+
+    // Search
+    searchProducts: "Search products...",
+    noResults: "No Results Found",
+    tryDifferentSearch: "Try searching with different keywords",
+    resultsFound: "results found for",
+    searchMessage: "Type to search for products by name or category",
+    search: "Search",
+    favorites: "Favorites",
+    offers: "Offers",
+    contact: "Contact",
+    recentlyPurchased: "Recently Purchased",
+
+    // Contact Screen
+    contactUs: "Contact Us",
+    getInTouch: "Get in touch with us",
+    owners: "Owners",
+    businessNames: "Business Names",
+    address: "Address",
+    contactNumbers: "Contact Numbers",
+    call: "Call",
+    whatsapp: "WhatsApp",
+
+    // Business Names
+    pawarTradingCompany: "Pawar Trading Company",
+    shivSaiPashukhadya: "Shiv Sai Pashukhadya",
+    annapurnaMilkProduction: "Annapurna Milk Production",
+    shivshaktiTraders: "Shivshakti Traders",
+
+    // Address
+    addressLine1: "Near Bus Stop Number 2,",
+    addressLine2: "Shirala Road, Rethare Dharan",
+    addressLine3: "Taluka Walwa, Dist. Sangli",
+    addressLine4: "Maharashtra, India",
+
+    // Categories
+    rice: "Rice",
+    ricegrains: "Rice & Grains",
+    cookingoils: "Cooking Oils",
+    milkdairy: "Milk & Dairy",
+    vegetables: "Vegetables", 
+    daalpulses: "Daal & Pulses",
+    spicesmasalas: "Spices & Masalas",
+    personalcare: "Personal Care",
+    teabeverages: "Tea & Beverages",
+    householditems: "Household Items",
+    snacksbiscuits: "Snacks & Biscuits",
+    animalfeed: "Animal Feed",
     
+    // New Features
+    todaysOffers: "Today's Offers",
+    limitedTimeDeals: "Limited Time Deals",
+    viewAll: "View All",
+    shopByCategory: "Shop by Category",
+
+    // All Product Names
+    "Kolam Rice (1kg)": "Kolam Rice (1kg)",
+    "Indrayani Rice (1kg)": "Indrayani Rice (1kg)",
+    "Basmati Rice (1kg)": "Basmati Rice (1kg)",
+    "Fresh Milk (1L)": "Fresh Milk (1L)",
+    "Toned Milk (1L)": "Toned Milk (1L)",
+    "Full Cream Milk (1L)": "Full Cream Milk (1L)",
+    "Paneer (250g)": "Paneer (250g)",
+    "Cottage Cheese (200g)": "Cottage Cheese (200g)",
+    "Yogurt (500g)": "Yogurt (500g)",
+    "Greek Yogurt (400g)": "Greek Yogurt (400g)",
+    "Butter (500g)": "Butter (500g)",
+    "Ghee (500ml)": "Ghee (500ml)",
+    "Cheese Slices (200g)": "Cheese Slices (200g)",
+    "Mozzarella Cheese (200g)": "Mozzarella Cheese (200g)",
+    "Cream (200ml)": "Cream (200ml)",
+    "Buttermilk (500ml)": "Buttermilk (500ml)",
+    "Lassi (250ml)": "Lassi (250ml)",
+    "Ice Cream (500ml)": "Ice Cream (500ml)",
+    "Onions (1kg)": "Onions (1kg)",
+    "Potatoes (1kg)": "Potatoes (1kg)",
+    "Tomatoes (1kg)": "Tomatoes (1kg)",
+    "Carrots (500g)": "Carrots (500g)",
+    "Green Beans (500g)": "Green Beans (500g)",
+    "Toor Daal (1kg)": "Toor Daal (1kg)",
+    "Moong Daal (1kg)": "Moong Daal (1kg)",
+    "Masoor Daal (1kg)": "Masoor Daal (1kg)",
+    "Chana Daal (1kg)": "Chana Daal (1kg)",
+    "Lux Soap (100g)": "Lux Soap (100g)",
+    "Dove Soap (100g)": "Dove Soap (100g)",
+    "Lifebuoy Soap (100g)": "Lifebuoy Soap (100g)",
+    "Shampoo (200ml)": "Shampoo (200ml)",
+    "Turmeric Powder (100g)": "Turmeric Powder (100g)",
+    "Red Chili Powder (100g)": "Red Chili Powder (100g)",
+    "Coriander Seeds (100g)": "Coriander Seeds (100g)",
+    "Garam Masala (50g)": "Garam Masala (50g)",
+    "Biscuits (200g)": "Biscuits (200g)",
+    "Chips (100g)": "Chips (100g)",
+    "Namkeen (150g)": "Namkeen (150g)",
+    "Tea (250g)": "Tea (250g)",
+    "Coffee (200g)": "Coffee (200g)",
+    "Soft Drink (500ml)": "Soft Drink (500ml)",
+    
+    // Carousel Ads
+    "Fresh Vegetables": "Fresh Vegetables",
+    "Up to 30% OFF": "Up to 30% OFF",
+    "Dairy Products": "Dairy Products",
+    "Buy 2 Get 1 Free": "Buy 2 Get 1 Free",
+    "Premium Rice": "Premium Rice",
+    "Special Discount": "Special Discount",
+
     // Product Categories
     grains: "Grains",
     sweeteners: "Sweeteners",
@@ -15,7 +120,7 @@ export const translations = {
     beverages: "Beverages",
     pulses: "Pulses",
     spices: "Spices",
-    
+
     // Product Names
     "Rice (1kg)": "Rice (1kg)",
     "Wheat Flour (1kg)": "Wheat Flour (1kg)",
@@ -37,7 +142,7 @@ export const translations = {
     "Coriander Seeds (100g)": "Coriander Seeds (100g)",
     "Yogurt (500g)": "Yogurt (500g)",
     "Butter (500g)": "Butter (500g)",
-    
+
     // Cart & Shopping
     addToCart: "Add to Cart",
     quantity: "Quantity",
@@ -50,7 +155,7 @@ export const translations = {
     startShopping: "Start Shopping",
     proceedToCheckout: "Proceed to Checkout",
     sendReceiptWhatsApp: "Send Receipt via WhatsApp",
-    
+
     // Receipt
     orderReceipt: "Order Receipt",
     printReceipt: "Print Receipt",
@@ -60,27 +165,27 @@ export const translations = {
     customer: "Customer",
     thankYou: "Thank you for shopping with us!",
     visitAgain: "Visit again soon!",
-    
+
     // Store Info
     storeName: "PAWAR TRADING",
     storeSubtitle: "Grocery Store",
     tagline: "Fresh Groceries at Best Prices",
-    
+
     // Buttons & Actions
     language: "Language",
     english: "English",
     marathi: "मराठी",
-    
+
     // Common Words
     kg: "kg",
     gram: "g",
     liter: "L",
     pieces: "pcs",
     rupees: "₹",
-    
+
     // Names
     "Pravin Devkar": "Pravin Devkar",
-    "Suraj Pawar": "Suraj Pawar", 
+    "Suraj Pawar": "Suraj Pawar",
     "Sunny Pawar": "Sunny Pawar",
     error: "Error",
     ok: "OK",
@@ -93,16 +198,121 @@ export const translations = {
     chooseNumber: "Choose Number",
     selectWhatsAppNumber: "Select WhatsApp number to send receipt:",
     items: "Items",
-    summary: "Summary"
+    summary: "Summary",
   },
-  
+
   mr: {
     // App Navigation
     home: "मुख्य",
     cart: "कार्ट",
     receipt: "पावती",
     back: "← मागे",
+
+    // Search
+    searchProducts: "उत्पादने शोधा...",
+    noResults: "काही परिणाम सापडले नाहीत",
+    tryDifferentSearch: "वेगळ्या कीवर्डसह शोधा",
+    resultsFound: "परिणाम सापडले",
+    searchMessage: "नाव किंवा श्रेणीनुसार उत्पादने शोधण्यासाठी टाइप करा",
+    search: "शोध",
+    favorites: "आवडते",
+    offers: "ऑफर",
+    contact: "संपर्क",
+    recentlyPurchased: "अलीकडे खरेदी केलेले",
+
+    // Contact Screen
+    contactUs: "आमच्याशी संपर्क साधा",
+    getInTouch: "आमच्याशी संपर्कात रहा",
+    owners: "मालक",
+    businessNames: "व्यवसायाची नावे",
+    address: "पत्ता",
+    contactNumbers: "संपर्क क्रमांक",
+    call: "कॉल करा",
+    whatsapp: "WhatsApp",
+
+    // Business Names
+    pawarTradingCompany: "पवार ट्रेडिंग कंपनी",
+    shivSaiPashukhadya: "शिव साई पशुखाद्य",
+    annapurnaMilkProduction: "अन्नपूर्णा मिल्क प्रोडक्शन",
+    shivshaktiTraders: "शिवशक्ती ट्रेडर्स",
+
+    // Address
+    addressLine1: "बस स्टॉप नंबर २ जवळ,",
+    addressLine2: "शिराळा रोड, रेठरे धरण",
+    addressLine3: "तालुका वाळवा, जि. सांगली",
+    addressLine4: "महाराष्ट्र, भारत",
+
+    // Categories
+    rice: "तांदूळ",
+    ricegrains: "तांदूळ आणि धान्य",
+    cookingoils: "स्वयंपाकाचे तेल",
+    milkdairy: "दूध आणि डेअरी",
+    vegetables: "भाज्या",
+    daalpulses: "डाळ आणि कडधान्य", 
+    spicesmasalas: "मसाले आणि गरम मसाला",
+    personalcare: "वैयक्तिक काळजी",
+    teabeverages: "चहा आणि पेये",
+    householditems: "घरगुती वस्तू",
+    snacksbiscuits: "नाश्ता आणि बिस्किटे",
+    animalfeed: "जनावरांचे आहार",
     
+    // New Features
+    todaysOffers: "आजचे ऑफर",
+    limitedTimeDeals: "मर्यादित काळातील सवलती",
+    viewAll: "सर्व पहा",
+    shopByCategory: "श्रेणीनुसार खरेदी करा",
+
+    // All Product Names
+    "Kolam Rice (1kg)": "कोलम तांदूळ (१ किलो)",
+    "Indrayani Rice (1kg)": "इंद्रायणी तांदूळ (१ किलो)",
+    "Basmati Rice (1kg)": "बासमती तांदूळ (१ किलो)",
+    "Fresh Milk (1L)": "ताजे दूध (१ लिटर)",
+    "Toned Milk (1L)": "टोन्ड दूध (१ लिटर)",
+    "Full Cream Milk (1L)": "फुल क्रीम दूध (१ लिटर)",
+    "Paneer (250g)": "पनीर (२५० ग्राम)",
+    "Cottage Cheese (200g)": "कॉटेज चीज (२०० ग्राम)",
+    "Yogurt (500g)": "दही (५०० ग्राम)",
+    "Greek Yogurt (400g)": "ग्रीक दही (४०० ग्राम)",
+    "Butter (500g)": "लोणी (५०० ग्राम)",
+    "Ghee (500ml)": "तूप (५०० मिली)",
+    "Cheese Slices (200g)": "चीज स्लाइसेस (२०० ग्राम)",
+    "Mozzarella Cheese (200g)": "मोझारेला चीज (२०० ग्राम)",
+    "Cream (200ml)": "मलाई (२०० मिली)",
+    "Buttermilk (500ml)": "ताक (५०० मिली)",
+    "Lassi (250ml)": "लस्सी (२५० मिली)",
+    "Ice Cream (500ml)": "आइसक्रीम (५०० मिली)",
+    "Onions (1kg)": "कांदे (१ किलो)",
+    "Potatoes (1kg)": "बटाटे (१ किलो)",
+    "Tomatoes (1kg)": "टोमॅटो (१ किलो)",
+    "Carrots (500g)": "गाजर (५०० ग्राम)",
+    "Green Beans (500g)": "हिरव्या शेंगा (५०० ग्राम)",
+    "Toor Daal (1kg)": "तूर डाळ (१ किलो)",
+    "Moong Daal (1kg)": "मूग डाळ (१ किलो)",
+    "Masoor Daal (1kg)": "मसूर डाळ (१ किलो)",
+    "Chana Daal (1kg)": "चणा डाळ (१ किलो)",
+    "Lux Soap (100g)": "लक्स साबण (१०० ग्राम)",
+    "Dove Soap (100g)": "डव्ह साबण (१०० ग्राम)",
+    "Lifebuoy Soap (100g)": "लाइफबॉय साबण (१०० ग्राम)",
+    "Shampoo (200ml)": "शॅम्पू (२०० मिली)",
+    "Turmeric Powder (100g)": "हळद पावडर (१०० ग्राम)",
+    "Red Chili Powder (100g)": "लाल मिरची पावडर (१०० ग्राम)",
+    "Coriander Seeds (100g)": "धनिया (१०० ग्राम)",
+    "Garam Masala (50g)": "गरम मसाला (५० ग्राम)",
+    "Biscuits (200g)": "बिस्किटे (२०० ग्राम)",
+    "Chips (100g)": "चिप्स (१०० ग्राम)",
+    "Namkeen (150g)": "नमकीन (१५० ग्राम)",
+    "Tea (250g)": "चहा (२५० ग्राम)",
+    "Coffee (200g)": "कॉफी (२०० ग्राम)",
+    "Soft Drink (500ml)": "सॉफ्ट ड्रिंक (५०० मिली)",
+    
+    // Carousel Ads
+    "Fresh Vegetables": "ताज्या भाज्या",
+    "Up to 30% OFF": "३०% पर्यंत सूट",
+    "Dairy Products": "दूध उत्पादने",
+    "Buy 2 Get 1 Free": "२ खरेदी करा १ मोफत",
+    "Premium Rice": "प्रीमियम तांदूळ",
+    "Special Discount": "विशेष सूट",
+
     // Product Categories
     grains: "धान्य",
     sweeteners: "गोड पदार्थ",
@@ -112,7 +322,7 @@ export const translations = {
     beverages: "पेये",
     pulses: "डाळी",
     spices: "मसाले",
-    
+
     // Product Names
     "Rice (1kg)": "तांदूळ (१ किलो)",
     "Wheat Flour (1kg)": "गव्हाचे पीठ (१ किलो)",
@@ -134,7 +344,7 @@ export const translations = {
     "Coriander Seeds (100g)": "धनिया (१०० ग्राम)",
     "Yogurt (500g)": "दही (५०० ग्राम)",
     "Butter (500g)": "लोणी (५०० ग्राम)",
-    
+
     // Cart & Shopping
     addToCart: "कार्टमध्ये घाला",
     quantity: "प्रमाण",
@@ -147,7 +357,7 @@ export const translations = {
     startShopping: "खरेदी सुरू करा",
     proceedToCheckout: "चेकआउट करा",
     sendReceiptWhatsApp: "WhatsApp वर पावती पाठवा",
-    
+
     // Receipt
     orderReceipt: "ऑर्डर पावती",
     printReceipt: "पावती प्रिंट करा",
@@ -157,29 +367,29 @@ export const translations = {
     customer: "ग्राहक",
     thankYou: "आमच्यासोबत खरेदी केल्याबद्दल धन्यवाद!",
     visitAgain: "पुन्हा भेट द्या!",
-    
+
     // Store Info
     storeName: "पवार ट्रेडिंग",
     storeSubtitle: "किराणा दुकान",
     tagline: "सर्वोत्तम किमतीत ताजे किराणा माल",
-    
+
     // Buttons & Actions
     language: "भाषा",
     english: "English",
     marathi: "मराठी",
-    
+
     // Common Words
     kg: "किलो",
     gram: "ग्राम",
     liter: "लिटर",
     pieces: "नग",
     rupees: "₹",
-    
+
     // Names
     "Pravin Devkar": "प्रविण देवकर",
     "Suraj Pawar": "सूरज पवार",
     "Sunny Pawar": "सनी पवार",
-    
+
     // Messages
     success: "यशस्वी",
     error: "त्रुटी",
@@ -193,10 +403,10 @@ export const translations = {
     chooseNumber: "नंबर निवडा",
     selectWhatsAppNumber: "पावती पाठवण्यासाठी WhatsApp नंबर निवडा:",
     items: "वस्तू",
-    summary: "सारांश"
-  }
+    summary: "सारांश",
+  },
 };
 
-export const getTranslation = (key, language = 'en') => {
+export const getTranslation = (key, language = "en") => {
   return translations[language][key] || translations.en[key] || key;
 };
