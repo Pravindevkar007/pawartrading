@@ -60,10 +60,22 @@ export const translations = {
     viewAll: "View All",
     shopByCategory: "Shop by Category",
 
-    // All Product Names
+    // All Product Names - Rice & Grains
     "Kolam Rice (1kg)": "Kolam Rice (1kg)",
     "Indrayani Rice (1kg)": "Indrayani Rice (1kg)",
     "Basmati Rice (1kg)": "Basmati Rice (1kg)",
+    "Wheat Flour (1kg)": "Wheat Flour (1kg)",
+    "Rava/Semolina (500g)": "Rava/Semolina (500g)",
+    "Poha (500g)": "Poha (500g)",
+    
+    // Cooking Oils
+    "Sunflower Oil (1L)": "Sunflower Oil (1L)",
+    "Groundnut Oil (1L)": "Groundnut Oil (1L)",
+    "Coconut Oil (500ml)": "Coconut Oil (500ml)",
+    "Mustard Oil (500ml)": "Mustard Oil (500ml)",
+    "Olive Oil (250ml)": "Olive Oil (250ml)",
+    
+    // Milk & Dairy
     "Fresh Milk (1L)": "Fresh Milk (1L)",
     "Toned Milk (1L)": "Toned Milk (1L)",
     "Full Cream Milk (1L)": "Full Cream Milk (1L)",
@@ -79,29 +91,95 @@ export const translations = {
     "Buttermilk (500ml)": "Buttermilk (500ml)",
     "Lassi (250ml)": "Lassi (250ml)",
     "Ice Cream (500ml)": "Ice Cream (500ml)",
+    
+    // Vegetables
     "Onions (1kg)": "Onions (1kg)",
     "Potatoes (1kg)": "Potatoes (1kg)",
     "Tomatoes (1kg)": "Tomatoes (1kg)",
     "Carrots (500g)": "Carrots (500g)",
     "Green Beans (500g)": "Green Beans (500g)",
+    "Cauliflower (1pc)": "Cauliflower (1pc)",
+    "Cabbage (1kg)": "Cabbage (1kg)",
+    "Green Chili (250g)": "Green Chili (250g)",
+    "Ginger (250g)": "Ginger (250g)",
+    "Garlic (250g)": "Garlic (250g)",
+    
+    // Daal & Pulses
     "Toor Daal (1kg)": "Toor Daal (1kg)",
     "Moong Daal (1kg)": "Moong Daal (1kg)",
     "Masoor Daal (1kg)": "Masoor Daal (1kg)",
     "Chana Daal (1kg)": "Chana Daal (1kg)",
-    "Lux Soap (100g)": "Lux Soap (100g)",
-    "Dove Soap (100g)": "Dove Soap (100g)",
-    "Lifebuoy Soap (100g)": "Lifebuoy Soap (100g)",
-    "Shampoo (200ml)": "Shampoo (200ml)",
+    "Urad Daal (1kg)": "Urad Daal (1kg)",
+    "Rajma (1kg)": "Rajma (1kg)",
+    "Chickpeas (1kg)": "Chickpeas (1kg)",
+    
+    // Spices & Masalas
     "Turmeric Powder (100g)": "Turmeric Powder (100g)",
     "Red Chili Powder (100g)": "Red Chili Powder (100g)",
     "Coriander Seeds (100g)": "Coriander Seeds (100g)",
     "Garam Masala (50g)": "Garam Masala (50g)",
-    "Biscuits (200g)": "Biscuits (200g)",
-    "Chips (100g)": "Chips (100g)",
-    "Namkeen (150g)": "Namkeen (150g)",
-    "Tea (250g)": "Tea (250g)",
-    "Coffee (200g)": "Coffee (200g)",
-    "Soft Drink (500ml)": "Soft Drink (500ml)",
+    "Chicken Masala (100g)": "Chicken Masala (100g)",
+    "Mutton Masala (100g)": "Mutton Masala (100g)",
+    "Paneer Masala (100g)": "Paneer Masala (100g)",
+    "Maggi Masala (10g)": "Maggi Masala (10g)",
+    "Khada Masala (50g)": "Khada Masala (50g)",
+    "Cumin Seeds (100g)": "Cumin Seeds (100g)",
+    "Black Pepper (50g)": "Black Pepper (50g)",
+    "Cardamom (50g)": "Cardamom (50g)",
+    "Cinnamon (50g)": "Cinnamon (50g)",
+    "Cloves (25g)": "Cloves (25g)",
+    "Bay Leaves (10g)": "Bay Leaves (10g)",
+    
+    // Personal Care
+    "Lux Soap (100g)": "Lux Soap (100g)",
+    "Dove Soap (100g)": "Dove Soap (100g)",
+    "Lifebuoy Soap (100g)": "Lifebuoy Soap (100g)",
+    "Medimix Soap (100g)": "Medimix Soap (100g)",
+    "Head & Shoulders (200ml)": "Head & Shoulders (200ml)",
+    "Clinic Plus (175ml)": "Clinic Plus (175ml)",
+    "Pantene Shampoo (200ml)": "Pantene Shampoo (200ml)",
+    "Hair Oil Coconut (200ml)": "Hair Oil Coconut (200ml)",
+    "Hair Oil Mustard (200ml)": "Hair Oil Mustard (200ml)",
+    "Toothpaste Colgate (100g)": "Toothpaste Colgate (100g)",
+    "Toothbrush (1pc)": "Toothbrush (1pc)",
+    
+    // Snacks & Biscuits
+    "Parle-G Biscuits (200g)": "Parle-G Biscuits (200g)",
+    "Marie Gold (200g)": "Marie Gold (200g)",
+    "Good Day (200g)": "Good Day (200g)",
+    "Lays Chips (100g)": "Lays Chips (100g)",
+    "Kurkure (100g)": "Kurkure (100g)",
+    "Namkeen Mix (150g)": "Namkeen Mix (150g)",
+    "Maggi Noodles (70g)": "Maggi Noodles (70g)",
+    
+    // Tea & Beverages Products
+    "Tata Tea Gold (250g)": "Tata Tea Gold (250g)",
+    "Red Label Tea (250g)": "Red Label Tea (250g)",
+    "Brooke Bond (250g)": "Brooke Bond (250g)",
+    "Society Tea (250g)": "Society Tea (250g)",
+    "Girnar Tea (250g)": "Girnar Tea (250g)",
+    "Nescafe Coffee (200g)": "Nescafe Coffee (200g)",
+    "Bru Coffee (200g)": "Bru Coffee (200g)",
+    "Green Tea (100g)": "Green Tea (100g)",
+    
+    // Household Items Products
+    "Plastic Bucket (20L)": "Plastic Bucket (20L)",
+    "Steel Bucket (15L)": "Steel Bucket (15L)",
+    "Detergent Powder (1kg)": "Detergent Powder (1kg)",
+    "Dish Soap (500ml)": "Dish Soap (500ml)",
+    "Floor Cleaner (1L)": "Floor Cleaner (1L)",
+    "Toilet Paper (4 rolls)": "Toilet Paper (4 rolls)",
+    "Garbage Bags (30pcs)": "Garbage Bags (30pcs)",
+    
+    // Animal Feed Products
+    "Cattle Feed (25kg)": "Cattle Feed (25kg)",
+    "Buffalo Feed (25kg)": "Buffalo Feed (25kg)",
+    "Wheat Straw (10kg)": "Wheat Straw (10kg)",
+    "Rice Straw (10kg)": "Rice Straw (10kg)",
+    "Green Fodder (5kg)": "Green Fodder (5kg)",
+    "Mineral Mix (1kg)": "Mineral Mix (1kg)",
+    "Salt Lick (500g)": "Salt Lick (500g)",
+    "Jaggery for Animals (1kg)": "Jaggery for Animals (1kg)",
     
     // Carousel Ads
     "Fresh Vegetables": "Fresh Vegetables",
@@ -262,10 +340,22 @@ export const translations = {
     viewAll: "सर्व पहा",
     shopByCategory: "श्रेणीनुसार खरेदी करा",
 
-    // All Product Names
+    // All Product Names - Rice & Grains
     "Kolam Rice (1kg)": "कोलम तांदूळ (१ किलो)",
     "Indrayani Rice (1kg)": "इंद्रायणी तांदूळ (१ किलो)",
     "Basmati Rice (1kg)": "बासमती तांदूळ (१ किलो)",
+    "Wheat Flour (1kg)": "गव्हाचे पीठ (१ किलो)",
+    "Rava/Semolina (500g)": "रवा/सूजी (५०० ग्राम)",
+    "Poha (500g)": "पोहा (५०० ग्राम)",
+    
+    // Cooking Oils
+    "Sunflower Oil (1L)": "सूर्यफूल तेल (१ लिटर)",
+    "Groundnut Oil (1L)": "भूइंग तेल (१ लिटर)",
+    "Coconut Oil (500ml)": "नारळ तेल (५०० मिली)",
+    "Mustard Oil (500ml)": "मोहरी तेल (५०० मिली)",
+    "Olive Oil (250ml)": "ऑलिव्ह ऑइल (२५० मिली)",
+    
+    // Milk & Dairy
     "Fresh Milk (1L)": "ताजे दूध (१ लिटर)",
     "Toned Milk (1L)": "टोन्ड दूध (१ लिटर)",
     "Full Cream Milk (1L)": "फुल क्रीम दूध (१ लिटर)",
@@ -281,29 +371,95 @@ export const translations = {
     "Buttermilk (500ml)": "ताक (५०० मिली)",
     "Lassi (250ml)": "लस्सी (२५० मिली)",
     "Ice Cream (500ml)": "आइसक्रीम (५०० मिली)",
+    
+    // Vegetables
     "Onions (1kg)": "कांदे (१ किलो)",
     "Potatoes (1kg)": "बटाटे (१ किलो)",
     "Tomatoes (1kg)": "टोमॅटो (१ किलो)",
     "Carrots (500g)": "गाजर (५०० ग्राम)",
     "Green Beans (500g)": "हिरव्या शेंगा (५०० ग्राम)",
+    "Cauliflower (1pc)": "फूलकोबी (१ नग)",
+    "Cabbage (1kg)": "कोबी (१ किलो)",
+    "Green Chili (250g)": "हिरवी मिरची (२५० ग्राम)",
+    "Ginger (250g)": "आले (२५० ग्राम)",
+    "Garlic (250g)": "लसूण (२५० ग्राम)",
+    
+    // Daal & Pulses
     "Toor Daal (1kg)": "तूर डाळ (१ किलो)",
     "Moong Daal (1kg)": "मूग डाळ (१ किलो)",
     "Masoor Daal (1kg)": "मसूर डाळ (१ किलो)",
     "Chana Daal (1kg)": "चणा डाळ (१ किलो)",
-    "Lux Soap (100g)": "लक्स साबण (१०० ग्राम)",
-    "Dove Soap (100g)": "डव्ह साबण (१०० ग्राम)",
-    "Lifebuoy Soap (100g)": "लाइफबॉय साबण (१०० ग्राम)",
-    "Shampoo (200ml)": "शॅम्पू (२०० मिली)",
+    "Urad Daal (1kg)": "उडद डाळ (१ किलो)",
+    "Rajma (1kg)": "राजमा (१ किलो)",
+    "Chickpeas (1kg)": "चणा (१ किलो)",
+    
+    // Spices & Masalas
     "Turmeric Powder (100g)": "हळद पावडर (१०० ग्राम)",
     "Red Chili Powder (100g)": "लाल मिरची पावडर (१०० ग्राम)",
     "Coriander Seeds (100g)": "धनिया (१०० ग्राम)",
     "Garam Masala (50g)": "गरम मसाला (५० ग्राम)",
-    "Biscuits (200g)": "बिस्किटे (२०० ग्राम)",
-    "Chips (100g)": "चिप्स (१०० ग्राम)",
-    "Namkeen (150g)": "नमकीन (१५० ग्राम)",
-    "Tea (250g)": "चहा (२५० ग्राम)",
-    "Coffee (200g)": "कॉफी (२०० ग्राम)",
-    "Soft Drink (500ml)": "सॉफ्ट ड्रिंक (५०० मिली)",
+    "Chicken Masala (100g)": "चिकन मसाला (१०० ग्राम)",
+    "Mutton Masala (100g)": "मटन मसाला (१०० ग्राम)",
+    "Paneer Masala (100g)": "पनीर मसाला (१०० ग्राम)",
+    "Maggi Masala (10g)": "मॅगी मसाला (१० ग्राम)",
+    "Khada Masala (50g)": "खडा मसाला (५० ग्राम)",
+    "Cumin Seeds (100g)": "जिरे (१०० ग्राम)",
+    "Black Pepper (50g)": "काळी मिरी (५० ग्राम)",
+    "Cardamom (50g)": "वेलची (५० ग्राम)",
+    "Cinnamon (50g)": "दालचिनी (५० ग्राम)",
+    "Cloves (25g)": "लवंग (२५ ग्राम)",
+    "Bay Leaves (10g)": "तेजपान (१० ग्राम)",
+    
+    // Personal Care
+    "Lux Soap (100g)": "लक्स साबण (१०० ग्राम)",
+    "Dove Soap (100g)": "डव्ह साबण (१०० ग्राम)",
+    "Lifebuoy Soap (100g)": "लाइफबॉय साबण (१०० ग्राम)",
+    "Medimix Soap (100g)": "मेडिमिक्स साबण (१०० ग्राम)",
+    "Head & Shoulders (200ml)": "हेड अँड शोल्डर्स (२०० मिली)",
+    "Clinic Plus (175ml)": "क्लिनिक प्लस (१७५ मिली)",
+    "Pantene Shampoo (200ml)": "पॅन्टीन शॅम्पू (२०० मिली)",
+    "Hair Oil Coconut (200ml)": "नारळ केसांचे तेल (२०० मिली)",
+    "Hair Oil Mustard (200ml)": "मोहरी केसांचे तेल (२०० मिली)",
+    "Toothpaste Colgate (100g)": "कोलगेट टूथपेस्ट (१०० ग्राम)",
+    "Toothbrush (1pc)": "टूथब्रश (१ नग)",
+    
+    // Snacks & Biscuits
+    "Parle-G Biscuits (200g)": "पारले-जी बिस्किटे (२०० ग्राम)",
+    "Marie Gold (200g)": "मॅरी गोल्ड (२०० ग्राम)",
+    "Good Day (200g)": "गुड डे (२०० ग्राम)",
+    "Lays Chips (100g)": "लेज चिप्स (१०० ग्राम)",
+    "Kurkure (100g)": "कुरकुरे (१०० ग्राम)",
+    "Namkeen Mix (150g)": "नमकीन मिक्स (१५० ग्राम)",
+    "Maggi Noodles (70g)": "मॅगी नूडल्स (७० ग्राम)",
+    
+    // Tea & Beverages Products
+    "Tata Tea Gold (250g)": "टाटा टी गोल्ड (२५० ग्राम)",
+    "Red Label Tea (250g)": "रेड लेबल चहा (२५० ग्राम)",
+    "Brooke Bond (250g)": "ब्रुक बॉन्ड (२५० ग्राम)",
+    "Society Tea (250g)": "सोसायटी चहा (२५० ग्राम)",
+    "Girnar Tea (250g)": "गिरनार चहा (२५० ग्राम)",
+    "Nescafe Coffee (200g)": "नेस्केफे कॉफी (२०० ग्राम)",
+    "Bru Coffee (200g)": "ब्रू कॉफी (२०० ग्राम)",
+    "Green Tea (100g)": "ग्रीन टी (१०० ग्राम)",
+    
+    // Household Items Products
+    "Plastic Bucket (20L)": "प्लास्टिक बाल्टी (२० लिटर)",
+    "Steel Bucket (15L)": "स्टील बाल्टी (१५ लिटर)",
+    "Detergent Powder (1kg)": "डिटर्जंट पाऊडर (१ किलो)",
+    "Dish Soap (500ml)": "भांडी धुण्याचा साबण (५०० मिली)",
+    "Floor Cleaner (1L)": "फरशी साफ करणारे (१ लिटर)",
+    "Toilet Paper (4 rolls)": "टॉयलेट पेपर (४ रोल)",
+    "Garbage Bags (30pcs)": "कचरा पिशव्या (३० नग)",
+    
+    // Animal Feed Products
+    "Cattle Feed (25kg)": "गुरांचे आहार (२५ किलो)",
+    "Buffalo Feed (25kg)": "म्हशींचे आहार (२५ किलो)",
+    "Wheat Straw (10kg)": "गव्हाचा पेंढा (१० किलो)",
+    "Rice Straw (10kg)": "तांदळाचा पेंढा (१० किलो)",
+    "Green Fodder (5kg)": "हिरवा चारा (५ किलो)",
+    "Mineral Mix (1kg)": "मिनरल मिक्स (१ किलो)",
+    "Salt Lick (500g)": "मीठाची चाटणी (५०० ग्राम)",
+    "Jaggery for Animals (1kg)": "जनावरांसाठी गूळ (१ किलो)",
     
     // Carousel Ads
     "Fresh Vegetables": "ताज्या भाज्या",
